@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="20114StudioX.HangManV1.27" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="aboutPage.xbf" uri="ms-resource://20114StudioX.HangManV1.27/Files/aboutPage.xbf">
+				<Candidate type="Path">
+					<Value>aboutPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="App.xbf" uri="ms-resource://20114StudioX.HangManV1.27/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="BlankPage1.xbf" uri="ms-resource://20114StudioX.HangManV1.27/Files/BlankPage1.xbf">
+				<Candidate type="Path">
+					<Value>BlankPage1.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HangMan.xr.xml" uri="ms-resource://20114StudioX.HangManV1.27/Files/HangMan.xr.xml">
+				<Candidate type="Path">
+					<Value>HangMan.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HelpPage.xbf" uri="ms-resource://20114StudioX.HangManV1.27/Files/HelpPage.xbf">
+				<Candidate type="Path">
+					<Value>HelpPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HomePage.xbf" uri="ms-resource://20114StudioX.HangManV1.27/Files/HomePage.xbf">
+				<Candidate type="Path">
+					<Value>HomePage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ImagePage.xbf" uri="ms-resource://20114StudioX.HangManV1.27/Files/ImagePage.xbf">
+				<Candidate type="Path">
+					<Value>ImagePage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="KnowPage.xbf" uri="ms-resource://20114StudioX.HangManV1.27/Files/KnowPage.xbf">
+				<Candidate type="Path">
+					<Value>KnowPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://20114StudioX.HangManV1.27/Files/MainPage.xbf">
+				<Candidate type="Path">
+					<Value>MainPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="Logo.png" uri="ms-resource://20114StudioX.HangManV1.27/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://20114StudioX.HangManV1.27/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://20114StudioX.HangManV1.27/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://20114StudioX.HangManV1.27/Files/Assets/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://20114StudioX.HangManV1.27/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WideLogo.png" uri="ms-resource://20114StudioX.HangManV1.27/Files/Assets/WideLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\WideLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Fonts">
+				<NamedResource name="Segoe.ttf" uri="ms-resource://20114StudioX.HangManV1.27/Files/Fonts/Segoe.ttf">
+					<Candidate type="Path">
+						<Value>Fonts\Segoe.ttf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

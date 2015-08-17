@@ -1,0 +1,231 @@
+﻿<Page
+    x:Class="App5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar Background="Indigo">
+            <AppBarButton x:ConnectionId='1' Icon="Home" Label="Home"
+                                                />
+            <AppBarButton x:ConnectionId='2' Icon="Forward" Label="I know"
+                                                />
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="DarkSlateBlue">
+        <!--<TextBox x:Name="Box" 
+            HorizontalAlignment="Left" 
+            Margin="274,321,0,0" 
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Top" 
+            Width="75" Height="45"/>-->
+        <TextBlock
+    		HorizontalAlignment="Left"
+    		TextWrapping="Wrap"
+    		Text="HangMan V 1.72"
+    		VerticalAlignment="Top"
+    		Height="45" Width="258"
+    		Margin="83,15,0,0"
+    		FontSize="30"/>
+        <TextBlock x:Name="Block"
+            HorizontalAlignment="Stretch" 
+            Margin="112,65,121,278" 
+            TextWrapping="Wrap" 
+            Text=""
+            VerticalAlignment="Stretch" FontSize="27"/>
+        <TextBlock x:Name="question"
+            HorizontalAlignment="Center" 
+            Margin="61,302,37,0" 
+            TextWrapping="Wrap" 
+            Text=""
+            VerticalAlignment="Top" 
+            Height="49" Width="Auto"
+            FontSize= "30" RenderTransformOrigin="0.499,0.442"/>
+        <TextBlock x:Name="guess"
+            HorizontalAlignment="Left" 
+            Margin="26,358,0,0" 
+            TextWrapping="Wrap" 
+            Text="Guess a letter :" 
+            VerticalAlignment="Top" 
+            Height="32" Width="136"
+            FontSize="20"/>
+        <TextBlock x:Name="errorBlock"
+            HorizontalAlignment="Center" 
+            Margin="187,357,19,0" 
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Top" 
+            Height="30" Width="194"
+            FontSize="20"/>
+        <Button x:ConnectionId='3' x:Name="a"
+            MinHeight="0"
+            MinWidth="0"
+            Height="60"
+            Width="40"
+            Content="a" HorizontalAlignment="Left" Margin="26,382,0,0" VerticalAlignment="Top"                />
+        <Button x:ConnectionId='4' x:Name="b"
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="b" HorizontalAlignment="Left" Margin="71,382,0,0" VerticalAlignment="Top"                />
+        <Button x:ConnectionId='5' x:Name="c" 
+                           
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="c" HorizontalAlignment="Left" Margin="116,382,0,0" VerticalAlignment="Top" />
+        <Button x:ConnectionId='6' x:Name="d" 
+                           
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="d" HorizontalAlignment="Left" Margin="161,382,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='7' x:Name="e" 
+                               
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="e" HorizontalAlignment="Left" Margin="206,382,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='8' x:Name="f"
+                               
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="f" HorizontalAlignment="Left" Margin="251,382,0,0" VerticalAlignment="Top"/>
+
+        <Button x:ConnectionId='9' x:Name="g" 
+                               
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="g" HorizontalAlignment="Left" Margin="296,382,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='10' x:Name="h"
+                               
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="h" HorizontalAlignment="Left" Margin="341,382,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='11' x:Name="i" 
+                               
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="i" HorizontalAlignment="Left" Margin="26,428,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='12' x:Name="j" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="j" HorizontalAlignment="Left"                 Margin="71,428,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='13' x:Name="k" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="k" HorizontalAlignment="Left"                 Margin="116,428,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='14' x:Name="l" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="l" HorizontalAlignment="Left"                 Margin="161,428,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='15' x:Name="m" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="m" HorizontalAlignment="Left"                 Margin="206,428,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='16' x:Name="n" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="n" HorizontalAlignment="Left"                 Margin="251,428,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='17' x:Name="o" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="o" HorizontalAlignment="Left"                 Margin="296,428,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='18' x:Name="p" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="p" HorizontalAlignment="Left"                 Margin="341,428,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='19' x:Name="q" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="q" HorizontalAlignment="Left"                 Margin="26,474,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='20' x:Name="r" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="r" HorizontalAlignment="Left"                 Margin="71,474,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='21' x:Name="s" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="s" HorizontalAlignment="Left"                 Margin="116,474,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='22' x:Name="t" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="t" HorizontalAlignment="Left"                 Margin="161,474,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='23' x:Name="u" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="u" HorizontalAlignment="Left"                 Margin="206,474,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='24' x:Name="v" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="v" HorizontalAlignment="Left"                 Margin="251,474,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='25' x:Name="w" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="w" HorizontalAlignment="Left"                 Margin="296,474,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='26' x:Name="x" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="x" HorizontalAlignment="Left"                 Margin="341,474,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='27' x:Name="y" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="y" HorizontalAlignment="Left"                 Margin="26,520,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='28' x:Name="z" 
+        	MinHeight="0"
+        	MinWidth="0"
+        	Height="60"
+        	Width="40"
+        	Content="z" HorizontalAlignment="Left"                 Margin="71,520,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
+

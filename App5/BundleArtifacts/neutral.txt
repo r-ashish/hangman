@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Ashish\Desktop\Desktop\MS-VS\VS\App5\App5\bin\Release\App5_1.27.0.3_Bundle\App5_1.27.0.3_AnyCPU.appx
+SymbolPackage=C:\Users\Ashish\Desktop\Desktop\MS-VS\VS\App5\App5\AppPackages\App5_1.27.0.3_Test\App5_1.27.0.3_AnyCPU.appxsym

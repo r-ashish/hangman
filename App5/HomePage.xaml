@@ -1,0 +1,161 @@
+﻿<Page
+    x:Class="App5.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Icon="Help" Label="Help" Click="help_Click"/>
+            <AppBarButton Icon="ContactPresence" Label="About" Click="AppBarButton_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid.Resources>
+            <Storyboard x:Name="show1" Completed="show1_Completed">
+                <DoubleAnimation 
+                    Storyboard.TargetName="title"
+                    Storyboard.TargetProperty="Opacity"  
+                    From="0"
+                    To="1"
+                    Duration="0:0:1"/>
+            </Storyboard>
+            <Storyboard x:Name="show2" Completed="show2_Completed">
+                <DoubleAnimation 
+                    Storyboard.TargetName="imageBlock"
+                    Storyboard.TargetProperty="Opacity"  
+                    From="0"
+                    To="1"
+                    Duration="0:0:1"/>
+            </Storyboard>
+            <Storyboard x:Name="show3" Completed="show3_Completed">
+                <DoubleAnimation 
+                    Storyboard.TargetName="Play"
+                    Storyboard.TargetProperty="Opacity"  
+                    From="0"
+                    To="1"
+                    Duration="0:0:1"/>
+            </Storyboard>
+            <Storyboard x:Name="show4" Completed="show4_Completed">
+                <DoubleAnimation 
+                    Storyboard.TargetName="Play"
+                    Storyboard.TargetProperty="Opacity"  
+                    From="0"
+                    To="0"
+                    Duration="0:0:3"/>
+            </Storyboard>
+        </Grid.Resources>
+        <Popup 
+            x:Name="pick" 
+            IsLightDismissEnabled="True"
+            Margin="0,150,0,78">
+            <ScrollViewer>
+            <Grid 
+                Height="350" 
+                Margin="0,0,0,0" 
+                Width="398">
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Gray" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <TextBlock 
+                    FontFamily="/Fonts/Segoe.ttf#Segoe Print"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center"
+                    FontSize="16"
+                    Margin="0,20,0,0"
+                    Text="Pick a category to continue"/>
+                <ComboBox
+                    x:Name="categ"
+                    SelectionChanged="ComboBox_SelectionChanged"
+                    Height="Auto"
+                    Margin="10,50,10,0">
+                    <ComboBoxItem Content="Animals"/>
+                    <ComboBoxItem Content="Countries"/>
+                        <ComboBoxItem Content="Elements of periodic table"/>
+                        <ComboBoxItem Content="Bollywood Movies"/>
+                    <ComboBoxItem Content="Hollywood Movies"/>
+                    </ComboBox>
+            </Grid>
+            </ScrollViewer>
+        </Popup>
+        <TextBlock
+            x:Name="title"
+            Opacity="0"
+            Style="{ThemeResource TitleTextBlockStyle}" 
+    		HorizontalAlignment="Center"
+    		TextWrapping="Wrap"
+    		Text="HangMan V 1.27"
+            FontFamily="/Fonts/Segoe.ttf#Segoe Print"
+    		VerticalAlignment="Top"
+            TextAlignment="Center"
+    		Height="61" Width="258"
+    		Margin="0,107,0,0"
+    		FontSize="24"/>
+        <TextBlock
+            x:Name="high"
+            Opacity="0" 
+    		HorizontalAlignment="Center"
+    		TextWrapping="Wrap"
+    		Text="High score : "
+            FontFamily="/Fonts/Segoe.ttf#Segoe Print"
+    		VerticalAlignment="Top"
+            TextAlignment="Center"
+    		Height="61" Width="258"
+    		Margin="0,507,0,0"
+    		FontSize="16"/>
+        <TextBlock 
+            x:Name="imageBlock"
+        	Opacity="0"
+            HorizontalAlignment="Center"
+        	Margin="0,173,0,0"
+        	TextWrapping="Wrap"
+        	FontSize="20"
+        	VerticalAlignment="Top"
+        	Height="215"
+             FontFamily="/Fonts/Segoe.ttf#Segoe Print"
+        	Width="150">
+        	<Run Text="     +----+"/>
+            <LineBreak/> <Run Text="      O     |"/>
+            <LineBreak/><Run Text="     /|\    |" />
+            <LineBreak/><Run Text="     / \    |"/>
+            <LineBreak/><Run Text="             |"/>
+            <LineBreak/><Run Text="   ======="/>
+        </TextBlock>
+        <Button 
+            x:Name="Play"
+            IsEnabled="False"
+        	Opacity="0"
+            Content="Play"
+            FontFamily="/Fonts/Segoe.ttf#Segoe Print"
+        	HorizontalAlignment="Center"
+        	Margin="0,447,0,0"
+        	VerticalAlignment="Top"
+            Click="Button_Click_2"/>
+        <TextBlock 
+            x:Name="load"
+            TextAlignment="Center"
+            HorizontalAlignment="Center" 
+            FontFamily="/Fonts/Segoe.ttf#Segoe Print"
+            Margin="0,393,0,0" 
+            TextWrapping="Wrap" 
+            Text="Hangon! HangMan is Loading...." 
+            VerticalAlignment="Top" 
+            FontSize="16"
+            Height="33" Width="258"/>
+        <ProgressBar
+            x:Name="progress"
+            HorizontalAlignment="Center"
+            Height="10" 
+            Margin="0,447,0,0" 
+            IsIndeterminate="True"
+            VerticalAlignment="Top" 
+            Width="346"/>
+    </Grid>
+</Page>

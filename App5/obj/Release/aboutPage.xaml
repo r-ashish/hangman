@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="HangMan.aboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HangMan"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock
+                Text="HangMan V 1.27" 
+                Style="{ThemeResource TitleTextBlockStyle}" 
+                Margin="0,12,0,0"
+                FontFamily="/Fonts/Segoe.ttf#Segoe Print"/>
+            <TextBlock 
+                FontFamily="/Fonts/Segoe.ttf#Segoe Print"
+                Text="about" 
+                Margin="0,-6.5,0,26.5" 
+                Style="{ThemeResource HeaderTextBlockStyle}" 
+                CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+        
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <TextBlock 
+        		HorizontalAlignment="Left" 
+        		Margin="10,27,0,0" 
+        		TextWrapping="Wrap"
+        		FontFamily="/Fonts/Segoe.ttf#Segoe Print"
+        		FontSize="16"
+        		VerticalAlignment="Top" 
+        		Height="254" Width="342">
+            	<Run Text="Designed and developed by Ashish Ranjan"/>
+            	<LineBreak/>
+            	<Run FontFamily="/Fonts/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print"/>
+            	<LineBreak/>
+            	<Run FontFamily="/Fonts/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print" Text="If "/>
+            	<Run FontFamily="/Fonts/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print" Text="you like HangMan V 1.27 or "/>
+            	<Run FontFamily="/Fonts/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print,C:/Users/Ashish/AppData/Local/Microsoft/Visual Studio/Font Cache/d2hkupyn.sxs/Segoe.ttf#Segoe Print" Text="you've any suggestions,"/>
+            	<Run Text="please review this game"/>
+            	<Run Text=" or "/>
+            	<LineBreak/>
+            	<Run Text="e-mail me at : ashishranjan2912@live.com"/>
+            </TextBlock>
+
+        </Grid>
+    </Grid>
+</Page>
+
